@@ -1,6 +1,11 @@
 import { LocalizedSimpleObject, LocalizedSimpleStringObject, SimpleObject } from "../dtos/simple-object.dto";
 
-const enums:any = {
+export const enums:any = {
+    LANGUAGES: {
+        kz: new LocalizedSimpleStringObject('kz', '', '', 'Kazakh'),
+        ru: new LocalizedSimpleStringObject('ru', '', '', 'Russian'),
+        en: new LocalizedSimpleStringObject('en', '', '', 'English')
+    },
     MONTHS: {
         JANUARY: new LocalizedSimpleStringObject('JANUARY', '', '', ''),
         FEBRUARY: new LocalizedSimpleStringObject('FEBRUARY', '', '', ''),
