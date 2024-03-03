@@ -1,0 +1,26 @@
+<div class="btn-group btn-group-sm float-end mt-4" role="group">
+  <input type="radio" class="btn-check" name="countInPart" id="5perPage"
+         [checked]="countInPart == 5"
+         (click)="countInPart = 5; pageNumber = 1; countInPartChange.emit()">
+  <label class="btn btn-outline-secondary" for="5perPage">5</label>
+
+  <input type="radio" class="btn-check" name="countInPart" id="10perPage"
+         [checked]="countInPage == 10"
+         (click)="countInPage = 10; pageNumber = 1; countInPageChange.emit()">
+  <label class="btn btn-outline-secondary" for="10perPage">10</label>
+
+  <input type="radio" class="btn-check" name="countInPart" id="15perPage"
+         [checked]="countInPage == 15"
+         (click)="countInPage = 15; pageNumber = 1; countInPageChange.emit()">
+  <label class="btn btn-outline-secondary" for="15perPage">15</label>
+
+  <input type="radio" class="btn-check" name="countInPart" id="20perPage"
+         [checked]="countInPage == 20"
+         (click)="countInPage = 20; pageNumber = 1; countInPageChange.emit()">
+  <label class="btn btn-outline-secondary" for="20perPage">20</label>
+
+  <input type="radio" class="btn-check" name="countInPart" id="25perPage"
+         [checked]="countInPage == 25"
+         (click)="countInPage = 25; pageNumber = 1; countInPageChange.emit()">
+  <label class="btn btn-outline-secondary" for="25perPage">25</label>
+</div>

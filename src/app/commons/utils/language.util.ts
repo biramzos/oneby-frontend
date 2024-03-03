@@ -1,23 +1,20 @@
-import { enums } from "../constants/enums";
-
-class Language {
-    code: string;
-    nameKZ:string;
-    nameRU:string;
-    nameEN:string;
-
-    constructor() {
-        this.code = localStorage.getItem('Accept-Language') ?? 'en';
-        this.nameKZ = enums.LANGUAGES[this.code].nameKZ;
-        this.nameRU = enums.LANGUAGES[this.code].nameRU;
-        this.nameEN = enums.LANGUAGES[this.code].nameEN;
-    }
-}
-
+import {Language} from "../constants/language";
 export class LanguageUtil {
-    currentLanguage:Language = new Language();
+  currentLanguage: Language = new Language();
 
-    getCurrentLanguage() {
-        return this.currentLanguage.code;
-    }
+  getCurrentLanguageCode(): string {
+      return this.currentLanguage.code;
+  }
+
+  getCurrentLanguageSuffix(): string {
+    return this.currentLanguage.suffix;
+  }
+
+  getCurrentLanguage(): Language {
+    return this.currentLanguage;
+  }
+
+  getCurrentLanguageName(): string {
+    return this.currentLanguage.getName();
+  }
 }

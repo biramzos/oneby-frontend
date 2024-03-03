@@ -1,0 +1,11 @@
+<div>
+  <ngb-pagination [collectionSize]="collectionSize"
+                  [(page)]="pageNumber"
+                  [pageSize]="countInPage"
+                  [maxSize]="maxSize"
+                  [rotate]="rotate"
+                  [boundaryLinks]="boundaryLinks"
+                  (pageChange)="pageChange.emit()">
+  </ngb-pagination>
+</div>
+
